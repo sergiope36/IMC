@@ -1,0 +1,42 @@
+@import 'common';
+
+nav {
+    height: 50px;
+    background-color: var(--main-color);
+}
+
+.imc {
+    padding-top: 50px;
+    @include display-flex(flex, column, center, center);
+    table {
+    margin:30px 0px;
+    padding: 0px 20px;
+    border-spacing: 0;
+        tr:nth-child(1) {
+            padding: 100px;
+            background-color:  var(--main-color);
+        }
+        th {
+            padding: 10px;
+            color: white;
+            text-align: center !important;  
+            border-right: 2px solid white !important; 
+        }
+        td {
+            border-bottom: 1px  solid var(--main-color);
+            padding: 10px 20px;
+        }
+        th:nth-child(1),
+        td:nth-child(1) {
+            width: 100px;
+            text-align: left;
+            border-right: 1px solid black;
+        }
+        th:nth-child(2),
+        td:nth-child(2) {
+            width: 350px;   
+            text-align: right;
+        }
+
+    }
+}

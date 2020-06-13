@@ -1,0 +1,40 @@
+:root {
+    --main-color:#320E3B;
+  }
+
+  h1, h2, h3 {
+      color: var(--main-color)
+  }
+
+
+  a {
+    text-decoration: none !important;
+    &:hover {
+        color: var(--brand-color) !important;
+}
+}
+button,
+.button {
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: 0px;
+    opacity: 1;
+    transition: opacity 0.4s;
+    
+    &:hover {
+        opacity: 0.7;
+        cursor: pointer;
+    }
+    &:focus {
+        opacity: 0.7;
+    }
+}
+
+  @mixin display-flex($display, $flex-direction, $justify-content, $align-items) {
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+  }

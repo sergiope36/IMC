@@ -1,0 +1,29 @@
+:root {
+  --main-color:#320E3B; }
+
+h1, h2, h3 {
+  color: var(--main-color); }
+
+a {
+  text-decoration: none !important; }
+  a:hover {
+    color: var(--brand-color) !important; }
+
+button,
+.button {
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: 0px;
+  opacity: 1;
+  -webkit-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  transition: opacity 0.4s; }
+  button:hover,
+  .button:hover {
+    opacity: 0.7;
+    cursor: pointer; }
+  button:focus,
+  .button:focus {
+    opacity: 0.7; }
